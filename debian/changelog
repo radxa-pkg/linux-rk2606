@@ -1,6 +1,16 @@
-linux-rk2606 (0.1.0-1) UNRELEASED; urgency=medium
+linux-rk2606 (0.1.0-1) unstable; urgency=medium
 
+  [ "Radxa Computer (Shenzhen) Co., Ltd." ]
   * Add initial Debian packaging support
 
- -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Thu, 01 Jan 1970 08:00:00 +0800
+  [ Peng Liu ]
+  * chore: update submodules
+  * chore: add radxa rk3576 products
+  * fix: disable unrelated Rockchip SoCs for RK3576
+  * chore: track linux-6.12-stan-rkr1.1 kernel branch
+  * chore: update kernel submodule to 2c0dd66
 
+  [ ZHANG Yuntian ]
+  * fix: json syntax error
+
+ -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Fri, 13 Nov 2026 06:34:20 +0000
