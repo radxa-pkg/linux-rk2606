@@ -2,7 +2,7 @@
   "*": {
     "Releases": [
       "rk3576-trixie",
-      "rk3576-trixie-test",
+      "rk3576-trixie-test"
     ]
   }
 }
