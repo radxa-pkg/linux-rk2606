@@ -4,7 +4,7 @@ linux-rk2606 (6.12.81-2) UNRELEASED; urgency=medium
   * fix: MUST call our generic config
   * chore: update package version
 
- -- Radxa Computer (Shenzhen) Co., Ltd. <dev@radxa.com>  Fri, 20 Nov 2026 03:04:55 +0000
+ -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Fri, 20 Nov 2026 03:04:55 +0000
 
 linux-rk2606 (0.1.0-1) unstable; urgency=medium
 
