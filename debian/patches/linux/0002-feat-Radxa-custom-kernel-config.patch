@@ -8,8 +8,8 @@ Disable unrelated Rockchip SoCs for RK3576.
 
 Signed-off-by: Peng Liu <liupeng@radxa.com>
 ---
- src/arch/arm64/configs/radxa_custom.config | 8 ++++++++
- 1 file changed, 8 insertions(+)
+ src/arch/arm64/configs/radxa_custom.config | 18 ++++++++
+ 1 file changed, 18 insertions(+)
  create mode 100644 src/arch/arm64/configs/radxa_custom.config
 
 diff --git a/src/arch/arm64/configs/radxa_custom.config b/src/arch/arm64/configs/radxa_custom.config
@@ -17,12 +17,22 @@ new file mode 100644
 index 000000000000..6787a6223f2f
 --- /dev/null
 +++ b/src/arch/arm64/configs/radxa_custom.config
-@@ -0,0 +1,8 @@
+@@ -0,0 +1,18 @@
 +# Use standard DRM permissions for the desktop graphics stack.
 +CONFIG_DRM_IGNORE_IOTCL_PERMIT=n
++
++# Disable unsupported products to prevent overlay build false positive.
 +CONFIG_CPU_RK3308=n
 +CONFIG_CPU_RK3328=n
 +CONFIG_CPU_RK3399=n
 +CONFIG_CPU_RK3528=n
 +CONFIG_CPU_RK3568=n
 +CONFIG_CPU_RK3588=n
++
++# cpufreq_interactive uses unexported functions
++CONFIG_CPU_FREQ_GOV_INTERACTIVE=y
++
++# Fix build error: 'dw8250_do_set_termios' exported twice
++CONFIG_SERIAL_8250=y
++CONFIG_SERIAL_8250_DWLIB=y
++CONFIG_SERIAL_8250_DW=y
